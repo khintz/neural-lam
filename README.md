@@ -150,12 +150,12 @@ In order to start training models at least three pre-processing scripts have to 
 * `create_parameter_weights.py`
 
 ### Create graph
-Run `python -m neural_lam.create_mesh` with suitable options to generate the graph you want to use (see `python neural_lam.create_mesh --help` for a list of options).
+Run `python -m neural_lam.create_graph` with suitable options to generate the graph you want to use (see `python neural_lam.create_graph --help` for a list of options).
 The graphs used for the different models in the [paper](https://arxiv.org/abs/2309.17370) can be created as:
 
-* **GC-LAM**: `python -m neural_lam.create_mesh --graph multiscale`
-* **Hi-LAM**: `python -m neural_lam.create_mesh --graph hierarchical --hierarchical 1` (also works for Hi-LAM-Parallel)
-* **L1-LAM**: `python -m neural_lam.create_mesh --graph 1level --levels 1`
+* **GC-LAM**: `python -m neural_lam.create_graph --graph multiscale`
+* **Hi-LAM**: `python -m neural_lam.create_graph --graph hierarchical --hierarchical 1` (also works for Hi-LAM-Parallel)
+* **L1-LAM**: `python -m neural_lam.create_graph --graph 1level --levels 1`
 
 The graph-related files are stored in a directory called `graphs`.
 
